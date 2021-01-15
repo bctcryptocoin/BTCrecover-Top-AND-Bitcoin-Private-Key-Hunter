@@ -1,0 +1,15 @@
+python btcrecover.py --wallet wallet.dat --performance --enable-gpu --global-ws 4096 --local-ws 256 --autosave progress.sav
+
+python btcrecover.py --listpass --tokenlist tokens.txt --typos-case --typos-map us-map.txt --typos 2
+
+
+python btcrecover.py --listpass --tokenlist bip39-en.txt --typos-case --typos-map us-map.txt --typos 2
+
+python btcrecover.py --wallet wallet.dat --enable-gpu --global-ws 4096 --local-ws 256 --tokenlist bip39-en.txt --typos-case --typos-map us-with-shifts-map.txt --typos 1
+
+python btcrecover.py --wallet wallet.dat --tokenlist tokens.txt
+
+python btcrecover.py --wallet wallet.dat --enable-gpu --global-ws 4096 --local-ws 256 --passwordlist 10_million_password_list_top_1000000.txt --typos 0
+
+python btcrecover.py --wallet wallet.dat --enable-gpu --global-ws 4096 --local-ws 256 --passwordlist 10_million_password_list_top_1000000.txt --typos-map ./typos/0.txt --typos 1
+
